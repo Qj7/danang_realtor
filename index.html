@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитная карточка</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f2;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        .photo {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 15px 0 5px;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .icons a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .icons a img {
+            width: 24px;
+            height: 24px;
+        }
+        .qr-card {
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 19px;
+            background: linear-gradient(to right, #000428, #004e92);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper {
+            text-align: center;
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+        }
+        .qr-card img {
+            width: 100px;
+            height: 100px;
+        }
+        .margin-top-lg {
+            margin-top: 45px;
+        }
+        .margin-top {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+      <div class="wrapper">
+        <div class="photo">
+            <img src="images/photo.jpg" alt="Фото">
+        </div>
+        <br>
+        <div class="name margin-top-lg">Vladimir Dolgiy</div>
+        <div class="subtitle">Риелтор в Дананге</div>
+        <div class="icons">
+            <a href="https://wa.me/ваш_номер" target="_blank">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://t.me/ваш_телеграм" target="_blank">
+                <img src="images/telegram.png" alt="Telegram">
+            </a>
+        </div>
+        <!-- <div class="qr-card">
+            <img src="qr-code.png" alt="QR Code">
+        </div> -->
+        <div class="card">
+          <div class="text-black">Test
+            <img src="images/qr.png" height="auto" width="200" alt="QR Code">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
